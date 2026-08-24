@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proyecto web básico para laboratorio de Git, GitHub y GitHub Pages.">
+  <title>Panel Full Stack | Laboratorio GitHub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <span class="eyebrow">DESARROLLO FULL STACK · IPCHILE</span>
+      <h1>Panel Full Stack</h1>
+      <p>
+        Proyecto web básico para practicar control de versiones, ramas,
+        colaboración y publicación con GitHub Pages.
+      </p>
+      <button id="btnVerificar" class="button" type="button">Verificar interacción</button>
+      <p id="mensaje" class="message" aria-live="polite"></p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro" aria-labelledby="titulo-modulos">
+      <h2 id="titulo-modulos">Módulos del proyecto</h2>
+      <p>
+        Las tarjetas representan las capas que se integrarán progresivamente
+        durante la asignatura. En este laboratorio solo se versiona y publica
+        una interfaz web estática.
+      </p>
+    </section>
+
+    <section class="cards" aria-label="Tarjetas de módulos">
+      <article class="card">
+        <div class="card__icon" aria-hidden="true">A</div>
+        <h3>Frontend Angular</h3>
+        <p>Interfaz basada en componentes para la experiencia del usuario.</p>
+        <span class="status status--active">Activo</span>
+      </article>
+
+      <article class="card">
+        <div class="card__icon" aria-hidden="true">D</div>
+        <h3>Backend Django</h3>
+        <p>Lógica de servidor que se integrará en etapas posteriores.</p>
+        <span class="status status--ready">Preparado</span>
+      </article>
+
+      <article class="card">
+        <div class="card__icon" aria-hidden="true">P</div>
+        <h3>PostgreSQL</h3>
+        <p>Persistencia de datos definida para la evolución del proyecto.</p>
+        <span class="status status--pending">Pendiente</span>
+      </article>
+    </section>
+
+    <section class="version-box" aria-labelledby="titulo-version">
+      <div>
+        <span class="eyebrow">VERSIÓN DE LABORATORIO</span>
+        <h2 id="titulo-version">v1.0 · Proyecto inicial</h2>
+        <p>
+          Esta sección es útil para demostrar cambios entre commits y ramas.
+          Modifica el texto desde una branch y observa cómo cambia el historial.
+        </p>
+      </div>
+      <div class="commit-chip">main</div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Laboratorio Git + GitHub + GitHub Pages</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
